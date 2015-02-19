@@ -1,8 +1,11 @@
 == README
 
 This is a tutorial on using Rails and Grape to build an API.
+
 This tutorial can be found on http://www.sitepoint.com/build-great-apis-grape/
+
 Rails version is 4.1.4 and Ruby version is 2.1.2p95
+
 Many thanks to Jay Raj http://www.sitepoint.com/author/jraj/
 
 
