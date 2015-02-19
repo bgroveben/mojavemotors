@@ -10,14 +10,18 @@ This API will create an Employee model that can be exposed to other applications
 
 Here are the API endpoints we'll be creating:
 
-// Get all employee details: /n
+// Get all employee details:
+
 GET /emp_api
 
-// Add an employee: /n
+// Add an employee:
+
 POST /emp_api/ {name: "Ben", address: "Planet Earth", age: "21"}
 
-// Delete an employee: /n
+// Delete an employee:
+
 DELETE /emp_api/1
 
-// Update an employee: /n
+// Update an employee:
+
 PUT /emp_api/1
