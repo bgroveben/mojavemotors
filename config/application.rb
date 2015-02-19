@@ -11,8 +11,8 @@ module EmpApi
     ##! As per the instructions on the Grape GitHub pages, since we have placed our API code in
     ##! app/api, that directory needs to be added to the load/autoload paths.
     ## Newly added code to set up the api code.
-    config.paths.add File.join('app', 'api'), glob: file.join('**', '*.rb')
-    config.autolad_paths += Dir[Rails.root.join('app', 'api', '*')]
+    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
+    config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
 
 
     # Settings in config/environments/* take precedence over those specified here.

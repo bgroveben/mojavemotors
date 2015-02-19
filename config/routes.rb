@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  ## Route the API calls to our root address
+  mount API => '/'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
