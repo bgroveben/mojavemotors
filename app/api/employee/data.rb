@@ -35,7 +35,19 @@ module Employee
       end
       delete ':id' do
         EmpData.find(params[:id]).destroy!
-      end 
+      end
+
+      ##! Add an endpoint to update an employee's address
+      desc "Update an Employee's address"
+      params do
+        requires :id, type: String
+        requires :address, type: String
+      end
+      put ':id' do
+        EmpData.find(params[:id]).update({
+          address:params[:address]
+        })
+      end
     end
 
   end
