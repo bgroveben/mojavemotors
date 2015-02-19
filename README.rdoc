@@ -1,28 +1,23 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a tutorial on using Rails and Grape to build an API.
+This tutorial can be found on http://www.sitepoint.com/build-great-apis-grape/
+Rails version is 4.1.4 and Ruby version is 2.1.2p95
+Many thanks to Jay Raj http://www.sitepoint.com/author/jraj/
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This API will create an Employee model that can be exposed to other applications.
+
+Here are the API endpoints we'll be creating:
+
+// Get all employee details
+GET /emp_api
+
+// Add an employee
+POST /emp_api/ {name: "Ben", address: "Planet Earth", age: "21"}
+
+// Delete an employee
+DELETE /emp_api/1
+
+// Update an employee
+PUT /emp_api/1
