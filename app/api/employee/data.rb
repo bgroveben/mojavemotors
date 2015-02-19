@@ -27,6 +27,15 @@ module Employee
           age:params[:age]
         })
       end
+
+      ##! Add another endpoint to delete an employee
+      desc "Delete an Employee"
+      params do
+        requires :id, type: String
+      end
+      delete ':id' do
+        EmpData.find(params[:id]).destroy!
+      end 
     end
 
   end
