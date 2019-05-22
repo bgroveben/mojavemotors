@@ -14,10 +14,10 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64 w3-text-black"><b>Mojave<br>Motors</b></h3>
+    <h3 class="w3-padding-64 w3-text-white"><b>Mojave<br>Motors</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red">Sales</a>
@@ -30,7 +30,7 @@ body {font-size:16px;}
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span class="w3-text-red">Mojave Motors</span>
+  <span class="w3-text-indigo">Mojave Motors</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -41,8 +41,8 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b class="w3-text-red">Mojave Motors</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Sales</b></h1>
+    <h1 class="w3-jumbo"><b class="w3-text-indigo">Mojave Motors</b></h1>
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Sales</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
 
@@ -74,7 +74,7 @@ body {font-size:16px;}
 
   <!-- Towing -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Towing</b></h1>
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Towing</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
 
@@ -95,8 +95,20 @@ body {font-size:16px;}
 
   <!-- Services -->
   <div class="w3-container" id="towing" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services</b></h1>
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Services</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/engine.jpg" style="width:100%" onclick="onClick(this)" alt="Mazda K Engine">
+    </div>
+    <div class="w3-half">
+      <img src="img/service.jpg" style="width:100%" onclick="onClick(this)" alt="BMW Front End Alignment">
+    </div>
+  </div>
+  <div class="w3-container">
     <p>Details about the services can go here.</p>
     <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
@@ -196,7 +208,7 @@ body {font-size:16px;}
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Do you have any questions? Maybe you would like to book an appointment? Send us an email and let us know what you need.</p>
     <form action="/action_page.php" target="_blank">
